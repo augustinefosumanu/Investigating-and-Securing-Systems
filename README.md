@@ -5,12 +5,12 @@
 
 In this lab, I tackled key cybersecurity tasks to address a simulated system breach:<br />
 
--  Process Monitoring: Investigated active processes to identify unauthorized or malicious activity.<br />
--  Password Auditing: Used John the Ripper to assess user password strength and uncover vulnerabilities.<br />
--  Access Control: Secured system access by revoking unauthorized sudo privileges.<br />
--  User and Group Cleanup: Audited and updated user/group configurations to ensure proper access controls.<br />
--  File Security: Hardened critical system file permissions to prevent unauthorized access.<br />
--  Legacy Service Removal: Identified and removed insecure services (FTP, Telnet, etc.) to eliminate vulnerabilities.<br />
+-  <b>Process Monitoring</b>: Investigated active processes to identify unauthorized or malicious activity.<br />
+-  <b>Password Auditing</b>: Used John the Ripper to assess user password strength and uncover vulnerabilities.<br />
+-  <b>Access Control</b>: Secured system access by revoking unauthorized sudo privileges.<br />
+-  <b>User and Group Cleanup</b>: Audited and updated user/group configurations to ensure proper access controls.<br />
+-  <b>File Security</b>: Hardened critical system file permissions to prevent unauthorized access.<br />
+-  <b>Legacy Service Removal</b>: Identified and removed insecure services (FTP, Telnet, etc.) to eliminate vulnerabilities.<br />
 
 
 <h2> Step 1: Inventory of Active System Processes </h2>
