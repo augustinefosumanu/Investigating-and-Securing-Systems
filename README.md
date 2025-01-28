@@ -1,43 +1,16 @@
-# Process Integrity and Access Control
+# TechNet Systems Cybersecurity Lab: Investigating and Securing Systems
+(Ficticious Organization)
+
 <h2> Lab </h2>
 
-<h2> Scenario 1 </h2>
-In this hands-on lab, I will assume the role of a cybersecurity investigator at TechNet Systems, where a potential security breach is under scrutiny. The IT team has flagged unusual system activity that may point to malicious processes running undetected. My task: investigate all active processes on the system, looking for any suspicious or unauthorized programs. I am expected to capture real-time snapshots of these processes while continuously monitoring for anomalies that could indicate a deeper compromise. By documenting and analyzing these processes, I will aim to uncover any hidden threats, ensuring system integrity while following forensic protocols for investigation and reporting.<br />
+In this lab, I tackled key cybersecurity tasks to address a simulated system breach:<br />
 
-<h2> Scenario 2 </h2>
-The IT team has raised concerns about weak passwords across the organization, potentially putting sensitive data at risk. My mission: utilize the john program to audit the strength of user passwords, identify any vulnerabilities, and document the passwords I uncover. This process will allow me to evaluate the effectiveness of password policies and ensure that user credentials meet security standards, all while adhering to best practices in ethical hacking and data protection.<br />
-
-<h2> Scenario 3 </h2>
-Following the discovery of unauthorized access, my next task is to lock down system access, including removing privileged sudo access to prevent further escalation. My objective: edit the sudoers file to revoke elevated permissions, ensuring that unauthorized users can no longer gain administrative control. This step is crucial in halting the spread of the breach and protecting the integrity of the system, all while adhering to best practices in incident response and system hardening.<br />
-
-<h2> Scenario 4 </h2>
-The IT department has raised concerns about potential unauthorized or suspicious user accounts and group memberships, which could present security risks. My mission: audit and clean up user and group configurations to ensure proper access controls and remove any threats. I will start by reviewing each user's UID and GID to confirm they are correctly assigned. Next, I’ll verify that only authorized users, such as the sysadmin account, remain in the sudoers group. Any unauthorized users in this group will be promptly removed and documented. I will also remove any users who should not have access to the system. Additionally, I'll ensure that non-admin users, including adam, billy, sally, and max, are part of the developers group, and I’ll create this group if necessary to support future file-sharing needs. By cleaning up and securing user groups, I will strengthen the system’s security posture and eliminate unnecessary risks.<br />
-
-<h2> Scenario 5 </h2>
-Following a recent security review, concerns have been raised about improper file permissions that could expose critical configuration files to unauthorized access. My mission: secure these essential files and directories by ensuring their permissions adhere to strict security standards.<br />
-
-Guided by a checklist from the senior administrator, I will take the following steps:<br />
-
--  Adjust permissions on /etc/shadow to restrict both read and write access to the root user only.<br />
--  Modify permissions on /etc/gshadow to similarly limit both read and write access to the root user only.<br />
--  Secure /etc/group by setting permissions to allow root read and write access while granting read-only access to all other users.<br />
--  Ensure /etc/passwd permissions allow root read and write access, with read-only access provided to other users.<br />
-
-<h2> Scenario 6 </h2>
-Recent assessments have flagged several legacy and insecure services that may be running on the server, exposing it to risks such as unauthorized access or data breaches. My mission: identify and eliminate these unnecessary or insecure services to ensure the server operates in a safe and efficient manner.<br />
-
-Following the guidance of the senior administrator, I will audit the system for the presence of specific services known to pose security risks, including:<br />
-
--  vsftpd.service (FTP)<br />
--  xinetd.service (Telnet)<br />
--  dovecot.service (IMAP or POP3)<br />
-  
-For any of these services discovered on the system, I will follow a structured approach to neutralize their risk:<br />
-
--  Stop the service immediately to ensure it is no longer active.<br />
--  Verify that the service is no longer running using system commands.<br />
--  Disable the service to prevent it from starting during future system reboots.<br />
--  Completely remove the service from the system to eliminate it as a potential threat.<br />
+-  Process Monitoring: Investigated active processes to identify unauthorized or malicious activity.<br />
+-  Password Auditing: Used John the Ripper to assess user password strength and uncover vulnerabilities.<br />
+-  Access Control: Secured system access by revoking unauthorized sudo privileges.<br />
+-  User and Group Cleanup: Audited and updated user/group configurations to ensure proper access controls.<br />
+-  File Security: Hardened critical system file permissions to prevent unauthorized access.<br />
+-  Legacy Service Removal: Identified and removed insecure services (FTP, Telnet, etc.) to eliminate vulnerabilities.<br />
 
 
 <h2> Step 1: Inventory of Active System Processes </h2>
