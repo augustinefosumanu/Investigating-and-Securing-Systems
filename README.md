@@ -16,6 +16,7 @@ In this lab, I tackled key cybersecurity tasks to address a simulated system bre
 <h2> Step 1: Inventory of Active System Processes </h2>
 I first executed a script file to compromise the system. Then, I ran the <b>top</b> command to generate a comprehensive list of all active processes. I carefully analyzed this list to identify any processes that appeared unfamiliar or suspicious. By comparing them against known safe processes and reviewing resource usage, I pinpointed potential anomalies that required further investigation or immediate action.
 <br />
+<br />
 <p align="center">
 <img src="https://i.imgur.com/A0kAc80.png" height="80%" width="90%" alt="Running processses"/>
 <img src="https://i.imgur.com/tsho2du.png" height="80%" width="90%" alt="Running processses"/>
