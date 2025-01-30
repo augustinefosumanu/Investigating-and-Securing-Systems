@@ -20,6 +20,7 @@ I first executed a script file to compromise the system. Then, I ran the <b>top<
 <p align="center">
 <img src="https://i.imgur.com/A0kAc80.png" height="80%" width="90%" alt="Running processses"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/tsho2du.png" height="80%" width="90%" alt="Running processses"/>
 
 <h2> Step 2: Copying the Shadow Password File </h2>
@@ -35,6 +36,7 @@ I edited the shadow_copy file using the <b>nano</b> text editor, carefully revie
 <p align="center">
 <img src="https://i.imgur.com/RAKpJJi.png" height="80%" width="90%" alt="Editing Shadow_copy file"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/22nOInc.png" height="80%" width="90%" alt="Editing Shadow_copy file"/>
 
 <h2> Step 4: Running the Shadow File Through a Password Cracker </h2>
@@ -42,6 +44,7 @@ I used the <b>john</b> program to crack the passwords stored in the shadow_copy 
 <br />
 <p align="center">
 <img src="https://i.imgur.com/E4vUAe5.png" height="80%" width="90%" alt="Cracking password"/>
+ <br />
  <br />
 <img src="https://i.imgur.com/5pfFUeD.png" height="80%" width="90%" alt="Cracking password"/>
 
@@ -57,6 +60,7 @@ I used <b>visudo</b> to securely edit the <b>/etc/sudoers</b> file, ensuring tha
 <p align="center">
 <img src="https://i.imgur.com/OEMTu2O.png" height="80%" width="90%" alt="Removing sudo access"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/MqXAGCa.png" height="80%" width="90%" alt="Removing sudo access"/>
 
 <h2> Step 7: Removing Less Access from Users in the Sudoers File </h2>
@@ -71,7 +75,9 @@ After editing the <b>/etc/sudoers</b> file, I ran a syntax check using the <b>vi
 <p align="center">
 <img src="https://i.imgur.com/zC6YiY9.png" height="80%" width="90%" alt="Confirming changes"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/COWsIh4.png" height="80%" width="90%" alt="Confirming changes"/>
+ <br />
  <br />
 <img src="https://i.imgur.com/1SNZRyS.png" height="80%" width="90%" alt="Confirming changes"/>
 
@@ -118,7 +124,9 @@ I used vulnerability assessment tools, including <b>systemctl</b>, to scan the s
 <p align="center">
 <img src="https://i.imgur.com/4xQMcbA.png" height="80%" width="90%" alt="Checking for vulnerabilities"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/RvXiEA1.png" height="80%" width="90%" alt="Checking for vulnerabilities"/>
+ <br />
  <br />
 <img src="https://i.imgur.com/OT6FCNq.png" height="80%" width="90%" alt="Checking for vulnerabilities"/>
 
@@ -128,9 +136,12 @@ After identifying vulnerable or unnecessary services during the audit, I took im
 <p align="center">
 <img src="https://i.imgur.com/m2TW6Uc.png" height="80%" width="90%" alt="Stopping vulnerable services"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/qXZskVM.png" height="80%" width="90%" alt="Stopping vulnerable services"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/v5xYq53.png" height="80%" width="90%" alt="Stopping vulnerable services"/>
+ <br />
  <br />
 <img src="https://i.imgur.com/FIXUSHP.png" height="80%" width="90%" alt="Stopping vulnerable services"/>
 
@@ -140,6 +151,7 @@ After stopping the flagged services, I disabled them to ensure they remained ina
 <p align="center">
 <img src="https://i.imgur.com/5QAs4ue.png" height="80%" width="90%" alt="Disabling vulnerable services"/>
  <br />
+ <br />
 <img src="https://i.imgur.com/KeFYGM3.png" height="80%" width="90%" alt="Disabling vulnerable services"/>
 
 <h2> Step 18: Removing Vulnerable Services from the System </h2>
@@ -147,4 +159,6 @@ After stopping and disabling the flagged services, I uninstalled them using the 
  <br />
 <p align="center">
 <img src="https://i.imgur.com/PtrInmB.png" height="80%" width="90%" alt="Removing services"/>
+ <br />
+ <br />
 <img src="https://i.imgur.com/wCTSJ1r.png" height="80%" width="90%" alt="Removing services"/>
