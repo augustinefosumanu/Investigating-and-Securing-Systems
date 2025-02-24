@@ -1,16 +1,17 @@
 # TechNet Systems Cybersecurity Lab: Investigating and Securing Systems
 (Ficticious Organization)
 
-<h2> Lab </h2>
+<h2> Overview </h2>
 
-In this lab, I tackled key cybersecurity tasks to address a simulated system breach:<br />
+This lab focused on mitigating a simulated system breach by enhancing security controls and eliminating vulnerabilities. I conducted process monitoring, audited password security, and enforced strict access controls to protect system integrity.
 
--  <b>Process Monitoring</b>: Investigated active processes to identify unauthorized or malicious activity.<br />
--  <b>Password Auditing</b>: Used John the Ripper to assess user password strength and uncover vulnerabilities.<br />
--  <b>Access Control</b>: Secured system access by revoking unauthorized sudo privileges.<br />
--  <b>User and Group Cleanup</b>: Audited and updated user/group configurations to ensure proper access controls.<br />
--  <b>File Security</b>: Hardened critical system file permissions to prevent unauthorized access.<br />
--  <b>Legacy Service Removal</b>: Identified and removed insecure services (FTP, Telnet, etc.) to eliminate vulnerabilities.<br />
+<h2>Technical Skills</h2>
+✅ Process Monitoring & Threat Detection<br />
+✅ Password Auditing (John the Ripper)<br />
+✅ Access Control & Privilege Management<br />
+✅ User & Group Configuration Auditing<br />
+✅ File Permission Hardening<br />
+✅ Legacy Service Identification & Removal<br />
 
 
 <h2>  Inventory of Active System Processes </h2>
